@@ -1,0 +1,38 @@
+.link{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.nav{
+border-radius: 8px;
+font-weight: 500;
+width: 100%;
+text-align: center;
+height: 50px;
+padding: 10px;
+/* margin-top: 20px; */
+/* font-family:'; */
+}
+
+.nav:hover{
+background-color:#A3E900;
+color: white;
+}
+
+/* .btn{
+    border-radius: 8px;
+    font-weight: 500;
+    width: 20%;
+    text-align: center;
+    height: 50px; 
+
+} */
+/* .btn:hover{
+    background-color:#A3E900;
+    color: white;
+    }
+     */
