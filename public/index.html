@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="2.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -28,6 +30,8 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -41,3 +45,20 @@
     -->
   </body>
 </html>
+<!-- <script> 
+  document.addEventListener('contextmenu', event=> event.preventDefault()); 
+  document.onkeydown = function(e) { 
+  if(event.keyCode == 123) { 
+  return false; 
+  } 
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){ 
+  return false; 
+  } 
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+  return false; 
+  } 
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+  return false; 
+  } 
+  } 
+  </script> -->

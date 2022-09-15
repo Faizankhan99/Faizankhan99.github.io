@@ -1,17 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
-import AllRoutes from './Routes/AllRoutes';
+import { Draw } from './components/Drawer/Drawe';
 import AllLinks from './Routes/AllLinks';
-import Profile from './components/Home/Profile';
-import { Box } from '@chakra-ui/react';
+// import Profile from './components/Home/Profile';
+// import { Box, Icon } from '@chakra-ui/react';
+// import About from './components/AboutMe/About';
+
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Box bg="#EDF2F8"> */}
       <AllLinks />
-      <AllRoutes />
-      {/* </Box> */}
     </div>
   );
 }

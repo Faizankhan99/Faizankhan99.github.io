@@ -8,7 +8,6 @@ export default function AllRoutes() {
     <>
       <Routes>
         <Route path="/" element={<Profile />} />
-        <Route path="about" element={<About />} />
       </Routes>
     </>
   );

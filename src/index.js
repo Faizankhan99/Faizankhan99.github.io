@@ -14,7 +14,7 @@ root.render(
     <BrowserRouter>
       <ChakraProvider>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-      <App />
+      <App  />
       </ChakraProvider>
       </BrowserRouter>
   </React.StrictMode>
