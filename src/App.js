@@ -1,6 +1,6 @@
 
 import './App.css';
-import { Draw } from './components/Drawer/Drawe';
+// import GitHub from './components/Github/Github';
 import AllLinks from './Routes/AllLinks';
 // import Profile from './components/Home/Profile';
 // import { Box, Icon } from '@chakra-ui/react';
@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <AllLinks />
+     {/* <GitHub/> */}
     </div>
   );
 }

@@ -12,6 +12,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { BsEggFried } from "react-icons/bs";
 import { Draw } from "../components/Drawer/Drawe";
+import GitHub from "../components/Github/Github";
 export default function AllLinks() {
   const { colorMode, toggleColorMode } = useColorMode();
   // console.log(colorMode);
@@ -135,12 +136,7 @@ export default function AllLinks() {
 
               {/* Dark Mode Button............................................................... */}
             </Text>
-            <Button
-              fontSize="2xl"
-              onClick={toggleColorMode}
-              mr="20px"
-              // mt="10px"
-            >
+            <Button fontSize="xl" onClick={toggleColorMode} mr="20px" mb="10px">
               {colorMode === "light" ? "Dark" : "Light"}
               {colorMode == "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
@@ -149,8 +145,8 @@ export default function AllLinks() {
       </Box>
       <Profile home={home} />
       <About about={about} />
-
       <Skill Skills={Skills} />
+      <GitHub />
       <Projects project={project} />
       <Contact contact={contact} />
     </>

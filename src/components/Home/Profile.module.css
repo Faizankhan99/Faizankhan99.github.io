@@ -120,9 +120,6 @@
 .run:hover span:nth-child(1){
   margin-right: 5px
 }
-/* .run:hover span:nth-child(1):after{
-  content: "'";
-} */
 .run:hover span:nth-child(2){
   margin-left: 30px
 }

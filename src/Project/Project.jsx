@@ -30,9 +30,15 @@ const Projects = (props) => {
         textAlign={"center"}
         pb={"100px"}
       >
-        {/* mynta................................ */}
+        {/* mynta................................ ....................................................................*/}
         <Box data-aos="zoom-in" borderRadius={10} p={4} boxShadow="dark-lg">
-          <Image w={"100%"} borderRadius={10} src={myntra} alt="Myntra-com" />
+          <Image
+            w={"100%"}
+            borderRadius={10}
+            src={myntra}
+            alt="Myntra-com"
+            border="5px solid #A3E900"
+          />
           <Heading mt={4} fontSize={"22px"}>
             Myntra - Clone
           </Heading>
@@ -83,10 +89,17 @@ const Projects = (props) => {
             </a>
           </Box>
         </Box>
-        {/* Sephora..................... */}
+
+        {/* Sephora............................................................................................... */}
 
         <Box data-aos="zoom-in" borderRadius={10} p={4} boxShadow="dark-lg">
-          <Image w={"100%"} borderRadius={10} src={Sephora} alt="Myntra-com" />
+          <Image
+            w={"100%"}
+            borderRadius={10}
+            src={Sephora}
+            alt="Myntra-com"
+            border="5px solid #A3E900"
+          />
           <Heading mt={4} fontSize={"22px"}>
             Sephora - Clone
           </Heading>

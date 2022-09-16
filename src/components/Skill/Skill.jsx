@@ -18,6 +18,7 @@ import react from "../Skill/react.svg";
 import redux from "../Skill/redux.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import GitHub from "../Github/Github";
 
 export default function Skill(props) {
   const { Skills } = props;
@@ -87,6 +88,8 @@ export default function Skill(props) {
           </SimpleGrid>
         </Box>
       </Box>
+
+      {/* <GitHub /> */}
     </>
   );
 }
