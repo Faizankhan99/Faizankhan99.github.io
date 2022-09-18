@@ -1,6 +1,5 @@
 import { Box, Heading, SimpleGrid, Image, Text } from "@chakra-ui/react";
 import React, { useEffect } from "react";
-import style from "../Skill/Skill.module.css";
 import bootstrap from "../Skill/bootstrap.svg";
 import chakra from "../Skill/chakraui.png";
 import css from "../Skill/css.svg";
@@ -46,7 +45,6 @@ export default function Skill(props) {
   return (
     <>
       <Box m="auto" mt="20%" ref={Skills}>
-        {/* <marquee scrollamount="13"> */}
         <Box display="flex">
           <Heading ml={["20%", "20%", "40%"]}>My</Heading>
           <Heading ml={["0.6%"]} color="#A3E900">
@@ -62,14 +60,11 @@ export default function Skill(props) {
                 w="90%"
                 cursor="pointer"
                 textAlign="center"
-                // alignItems="center"
-                // border="1px solid black"
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500"
                 key={elem.id}
               >
-                {/* {console.log(elem.id)} */}
                 <Image
                   // key={elem.id}
                   transition=" all .3s ease-in-out"
@@ -88,8 +83,6 @@ export default function Skill(props) {
           </SimpleGrid>
         </Box>
       </Box>
-
-      {/* <GitHub /> */}
     </>
   );
 }

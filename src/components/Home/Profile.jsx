@@ -23,14 +23,7 @@ export default function Profile(props) {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <Box
-      m="auto"
-      mt="8%"
-      w="90%"
-      // border="3px solid black"
-      ml={["none", "none", "10%"]}
-      ref={home}
-    >
+    <Box m="auto" mt="8%" w="90%" ml={["none", "none", "10%"]} ref={home}>
       <SimpleGrid columns={[1, 1, 2]} spacing="0px">
         <Box m="10%" ml={["-10px", "none", "none"]} data-aos="fade-right">
           <Box className={style.mainBox}>
@@ -81,7 +74,6 @@ export default function Profile(props) {
             _hover={{
               transform: "scale(1.1)",
             }}
-            // border="3px solid red"
           />
         </Box>
       </SimpleGrid>

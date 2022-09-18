@@ -29,9 +29,6 @@ export default function Contact(props) {
   }
 
   const handlesubmit = (e) => {
-    // e.preventDefault();
-    // setUser([...user, form]);
-    // setForm(formdata);
     e.preventDefault();
     emailjs
       .sendForm(
@@ -54,8 +51,6 @@ export default function Contact(props) {
       isClosable: true,
     });
   };
-  //   console.log(user, form);
-  //   console.log(form);
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);

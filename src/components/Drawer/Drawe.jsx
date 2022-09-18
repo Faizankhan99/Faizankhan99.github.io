@@ -15,7 +15,6 @@ import {
 import { AiOutlineBars } from "react-icons/ai";
 import Styles from "../All.module.css";
 import { useRef } from "react";
-import { useEffect } from "react";
 
 export function Draw(prop) {
   const {
@@ -43,18 +42,15 @@ export function Draw(prop) {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          {/* <DrawerHeader>NavBar</DrawerHeader> */}
 
           <DrawerBody>
             <Box
-              // border="1px solid black"
               justifyContent="space-around"
               w="70%"
               fontWeight="bold"
               alignItems="center"
               mt="35%"
               ml="20%"
-              // fontSize="3xl"
             >
               <Text
                 fontSize="35px"

@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import About from "../components/AboutMe/About";
 import Profile from "../components/Home/Profile";
 
 export default function AllRoutes() {

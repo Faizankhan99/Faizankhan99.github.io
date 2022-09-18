@@ -41,7 +41,7 @@ export default function AllLinks() {
     contact.current.scrollIntoView({ behavior: "smooth" });
   }
 
-  const [bg, setBg] = useState({});
+  const [bg, setBg] = useState();
 
   useEffect(() => {
     if (colorMode == "light") {
@@ -50,7 +50,7 @@ export default function AllLinks() {
     } else {
       setBg({ backgroundColor: "rgb(34,35,38)" });
     }
-  }, [bg]);
+  }, [colorMode]);
 
   return (
     <>
