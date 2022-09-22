@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { BsGithub } from "react-icons/bs";
 import { HiEye } from "react-icons/hi";
 import { AiOutlinePlayCircle } from "react-icons/ai";
-import { useState } from "react";
+// import { useState } from "react";
 import myntra from "../Project/myntra.png";
 import Sephora from "../Project/sephora.png";
 import AOS from "aos";
@@ -84,7 +84,7 @@ const Projects = (props) => {
                 style={{ marginTop: "3" }}
               />
             </a>
-            <a href="https://myntraaaaa.netlify.app/">
+            <a href="https://myntraaaa.netlify.app/">
               <HiEye mt={-1.5} className="gitEye" />
             </a>
           </Box>

@@ -11,7 +11,12 @@ import React, { useEffect, useState } from "react";
 import style from "../ContactMe/Contact.module.css";
 import CONTACT from "../ContactMe/contact.gif";
 import { useToast, Link } from "@chakra-ui/react";
-import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiOutlineMail,
+  AiFillPhone,
+} from "react-icons/ai";
 import emailjs from "emailjs-com";
 
 import AOS from "aos";
@@ -76,12 +81,22 @@ export default function Contact(props) {
             />
           </Box>
           <Box className={style.App}>
-            <Box display="flex">
+            <Box display={"flex"} m="auto" gap={[2, 2, 7, 8]} mt="100px">
               <Box>
                 <Button
-                  bg=" #A3E900"
-                  data-aos="fade-down"
-                  data-aos-duration="3000"
+                  fontSize={[14, 14, 14, 17]}
+                  color="#ffff"
+                  bg="#A3E900"
+                  p={"0"}
+                  pl={[1, 1, 0, 3]}
+                  pr={[1, 1, 0, 3]}
+                  data-aos="fade-right"
+                  transition="all .4s ease-in-out"
+                  _hover={{
+                    transform: "scale(1.1)",
+                    bg: "#ffff",
+                    color: "#4db946",
+                  }}
                 >
                   <a href="https://github.com/Faizankhan99">GitHub</a>
                   <AiFillGithub />
@@ -90,10 +105,19 @@ export default function Contact(props) {
 
               <Box>
                 <Button
-                  ml="10px"
-                  bg=" #A3E900"
-                  data-aos="fade-down"
-                  data-aos-duration="3000"
+                  fontSize={[14, 14, 14, 17]}
+                  color="#ffff"
+                  bg="#A3E900"
+                  p={"0"}
+                  pl={[1, 1, 0, 3]}
+                  pr={[1, 1, 0, 3]}
+                  data-aos="fade-right"
+                  transition="all .4s ease-in-out"
+                  _hover={{
+                    transform: "scale(1.1)",
+                    bg: "#ffff",
+                    color: "#4db946",
+                  }}
                 >
                   <a href="https://www.linkedin.com/in/faizan7">LinkedIn</a>
                   <AiFillLinkedin />
@@ -102,14 +126,48 @@ export default function Contact(props) {
 
               <Box>
                 <Button
-                  ml="10px"
-                  bg=" #A3E900"
-                  data-aos="fade-down"
-                  data-aos-duration="3000"
+                  fontSize={[14, 14, 14, 17]}
+                  color="#ffff"
+                  bg="#A3E900"
+                  p={"0"}
+                  pl={[1, 1, 0, 3]}
+                  pr={[1, 1, 0, 3]}
+                  data-aos="fade-right"
+                  transition="all .4s ease-in-out"
+                  _hover={{
+                    transform: "scale(1.1)",
+                    bg: "#A3E900",
+                    color: "#4db946",
+                  }}
                 >
                   <a href="mailto:usmani.faizan98@gamil.com">Gmail</a>
                   <AiOutlineMail />
                 </Button>
+              </Box>
+
+              <Box>
+                <a href="tel:+919752736273">
+                  <Button
+                    fontSize={[14, 14, 14, 17]}
+                    color="#ffff"
+                    bg="#A3E900"
+                    p={"0"}
+                    pl={[1, 1, 0, 3]}
+                    pr={[1, 1, 0, 3]}
+                    data-aos="fade-right"
+                    transition="all .4s ease-in-out"
+                    _hover={{
+                      transform: "scale(1.1)",
+                      bg: "#A3E900",
+                      color: "#4db946",
+                    }}
+                  >
+                    {" "}
+                    <AiFillPhone
+                      style={{ marginRight: "4", fontSize: "20px" }}
+                    />
+                  </Button>
+                </a>
               </Box>
             </Box>
             <Box
