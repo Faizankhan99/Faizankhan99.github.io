@@ -6,6 +6,8 @@ import { AiOutlinePlayCircle } from "react-icons/ai";
 // import { useState } from "react";
 import myntra from "../Project/myntra.png";
 import Sephora from "../Project/sephora.png";
+import clockify from "../Project/clockify.png";
+import portfolio from "../Project/Portfolio.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -89,8 +91,7 @@ const Projects = (props) => {
             </a>
           </Box>
         </Box>
-
-        {/* Sephora............................................................................................... */}
+        {/*Sephora................................................................................................... */}
 
         <Box data-aos="zoom-in" borderRadius={10} p={4} boxShadow="dark-lg">
           <Image
@@ -125,6 +126,122 @@ const Projects = (props) => {
             <span style={{ fontSize: "16px" }} ml="30px">
               {" "}
               HTML | CSS | JAVASCRIPT | JSON SERVER
+            </span>
+          </Text>
+          <Box
+            w={"80%"}
+            m={"auto"}
+            mt={3}
+            justifyItems={"center"}
+            display={"flex"}
+            justifyContent="space-between"
+            fontSize={["30px", "30px", "40px"]}
+            className="ProjectIcon"
+          >
+            <a href="https://github.com/UrsTrulyAditya/Sephora-Clone">
+              <BsGithub className="gitEye" style={{ marginTop: "3" }} />
+            </a>
+            <a href="https://www.linkedin.com/posts/faizan7_python-html-css-activity-6945353972337520640-nnFZ?utm_source=share&utm_medium=member_desktop">
+              <AiOutlinePlayCircle
+                className="gitEye"
+                style={{ marginTop: "3" }}
+              />
+            </a>
+            <a href="https://sphoraclone.netlify.app/homepage.html">
+              <HiEye mt={-1.5} className="gitEye" />
+            </a>
+          </Box>
+        </Box>
+
+        {/* ..............................Clockify ..........................................*/}
+        <Box data-aos="zoom-in" borderRadius={10} p={4} boxShadow="dark-lg">
+          <Image
+            w={"100%"}
+            borderRadius={10}
+            src={clockify}
+            alt="CLokify"
+            border="5px solid #A3E900"
+          />
+          <Heading mt={4} fontSize={"22px"}>
+            Clockify - Clone
+          </Heading>
+          <Text
+            fontSize={["14px", "14px", "17px"]}
+            lineHeight={"21px"}
+            w="99%"
+            mt={2}
+            textAlign={"left"}
+          >
+            This website is a clone of "Clockify". Clockify is a time tracker
+            and timesheet app that lets you track work hours across projects.
+            Unlimited users, free forever.
+          </Text>
+          <Text mt={2} textAlign={"left"} fontSize={["14px", "14px", "17px"]}>
+            <b> Group Project: </b>| 5 Collaborators | <b>Duration: </b> 04 Days
+          </Text>
+          <Text mt={2} textAlign={"left"} fontSize={["13px", "13px", "15px"]}>
+            <span style={{ color: "#A3E900", fontSize: "16px" }}>
+              TECH STACK:-
+            </span>
+            <span style={{ fontSize: "16px" }} ml="30px">
+              REACT | CSS | Express.js | CHAKRA UI |Mongo db | Firebase
+            </span>
+          </Text>
+          <Box
+            w={"80%"}
+            m={"auto"}
+            mt={3}
+            justifyItems={"center"}
+            display={"flex"}
+            justifyContent="space-between"
+            fontSize={["30px", "30px", "40px"]}
+            className="ProjectIcon"
+          >
+            <a href="https://github.com/saurabhsolanki/unused-library-4088">
+              <BsGithub className="gitEye" style={{ marginTop: "3" }} />
+            </a>
+            <a href="https://clockyf.netlify.app">
+              <HiEye mt={-1.5} className="gitEye" />
+            </a>
+          </Box>
+        </Box>
+
+        {/* ...............................Portfolio................................. */}
+
+        <Box data-aos="zoom-in" borderRadius={10} p={4} boxShadow="dark-lg">
+          <Image
+            w={"100%"}
+            borderRadius={10}
+            src={portfolio}
+            alt="Myntra-com"
+            border="5px solid #A3E900"
+          />
+          <Heading mt={4} fontSize={"22px"}>
+            Portfolio
+          </Heading>
+          <Text
+            fontSize={["14px", "14px", "17px"]}
+            lineHeight={"21px"}
+            w="99%"
+            mt={2}
+            textAlign={"left"}
+          >
+            This is my fully responsive portfolio which I recently made using
+            React & Chakra UI, This website has Dark mode, Scrolling
+            functionality etc. This is private repository to protect the code
+            for its uniqueness.
+          </Text>{" "}
+          <br />
+          <Text mt={2} textAlign={"left"} fontSize={["14px", "14px", "17px"]}>
+            <b> Individual Project </b> | <b>Duration: </b> 06 Days
+          </Text>
+          <Text mt={2} textAlign={"left"} fontSize={["13px", "13px", "15px"]}>
+            <span style={{ color: "#A3E900", fontSize: "16px" }}>
+              TECH STACK:-
+            </span>
+            <span style={{ fontSize: "16px" }} ml="30px">
+              {" "}
+              REACT JS | CSS | JavaScript | Chakra UI
             </span>
           </Text>
           <Box

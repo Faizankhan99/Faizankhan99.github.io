@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import image from "../Home/my.jpg";
 import hi from "../Home/Hi.gif";
-import resume from "../Home/Faizan-Khan-Resume.pdf";
+import resume from "../Home/Faizan_Khan_Resume.pdf";
 
 export default function Profile(props) {
   const { home } = props;
@@ -56,7 +56,7 @@ export default function Profile(props) {
               h="50px"
               display="flex"
             >
-              <a href={resume} download="Faizan">
+              <a href={resume} download="Faizan_khan_Resume">
                 Resume
               </a>
               <AiOutlineArrowDown />

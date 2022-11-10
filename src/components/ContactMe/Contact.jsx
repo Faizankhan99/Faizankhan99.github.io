@@ -1,7 +1,6 @@
 import {
   Box,
   Heading,
-  Input,
   Image,
   SimpleGrid,
   Text,
@@ -21,13 +20,17 @@ import emailjs from "emailjs-com";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-const formdata = { name: "", email: "", message: "" };
+const formdata = {
+  name: "",
+  email: "",
+  message: "",
+};
 
 export default function Contact(props) {
   const { contact } = props;
   const toast = useToast();
   const [form, setForm] = useState(formdata);
-  const [user, setUser] = useState([]);
+  // const [user, setUser] = useState([]);
   function handleform(e) {
     const { name: key, value } = e.target;
     setForm({ ...form, [key]: value });
@@ -48,16 +51,21 @@ export default function Contact(props) {
       .catch((err) => {
         console.log(err);
       });
+
     toast({
-      title: "Thank you for contacting me",
+      title: "Thank you for contacting me🙂",
       description: "I will give  you reply soon ",
       status: "success",
       duration: 9000,
       isClosable: true,
     });
+    setForm("");
+    e.target.reset();
   };
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    // setForm("");
   }, []);
   return (
     <>
@@ -264,7 +272,4 @@ export default function Contact(props) {
       </Box>
     </>
   );
-}
-
-{
 }
