@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import { BsEggFried } from "react-icons/bs";
 import { Draw } from "../components/Drawer/Drawe";
 import GitHub from "../components/Github/Github";
+import Timeline from "../components/Experince";
 export default function AllLinks() {
   const { colorMode, toggleColorMode } = useColorMode();
   // console.log(colorMode);
@@ -40,6 +41,12 @@ export default function AllLinks() {
   function handlecontactClick() {
     contact.current.scrollIntoView({ behavior: "smooth" });
   }
+
+const experince = useRef();
+function handleExperinceClick() {
+  experince.current.scrollIntoView({ behavior: "smooth" });
+}
+
 
   const [bg, setBg] = useState();
 
@@ -70,7 +77,7 @@ export default function AllLinks() {
             // border="1px solid black"
             display="flex"
             justifyContent="space-around"
-            w="50%"
+            w="60%"
             fontWeight="bold"
             alignItems="center"
             mt="10px"
@@ -115,6 +122,17 @@ export default function AllLinks() {
             >
               CONTACT
             </Text>
+
+
+            <Text
+              fontSize="xl"
+              className={Styles.nav}
+              onClick={handleExperinceClick}
+              display={["none", "none", "none", "flex"]}
+            >
+              EXEPERINCE
+            </Text>
+
             <a href="https://drive.google.com/file/d/12Gd7HGtrqxOvIYEdPkASSUA4ZEc38R8Q/view?usp=sharing">
               <Text
                 fontSize="xl"
@@ -146,6 +164,7 @@ export default function AllLinks() {
       <Profile home={home} />
       <About about={about} />
       <Skill Skills={Skills} />
+      <Timeline experince={experince}/>
       <GitHub />
       <Projects project={project} />
       <Contact contact={contact} />

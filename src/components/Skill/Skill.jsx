@@ -15,6 +15,10 @@ import npm from "../Skill/npm.svg";
 import postman from "../Skill/postman.png";
 import react from "../Skill/react.svg";
 import redux from "../Skill/redux.svg";
+import typeScript from './typeScript.png';
+import Next from './Next.svg';
+import aws from './aws.png';
+import s3 from './s3.png';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import GitHub from "../Github/Github";
@@ -35,12 +39,17 @@ export default function Skill(props) {
     { src: express, title: "express", id: 7 },
     { src: mongodb, title: "mongodb", id: 8 },
     { src: git, title: "git", id: 9 },
-    // { src: materialui, title: "materialui" ,id:10},
+    { src: materialui, title: "materialui" ,id:10},
     { src: mongoose, title: "mongoose", id: 11 },
     { src: nodejs, title: "nodejs", id: 12 },
     { src: npm, title: "npm", id: 13 },
     { src: postman, title: "postman", id: 14 },
     { src: redux, title: "redux", id: 15 },
+    { src: Next, title: "nextJs", id: 16 },
+    { src: typeScript, title: "typeScript", id: 17 },
+    { src: aws, title: "aws", id: 18 },
+    { src: s3, title: "Aws-S3", id: 19 },
+
   ];
   return (
     <>
