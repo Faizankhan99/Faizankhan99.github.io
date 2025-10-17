@@ -4,8 +4,8 @@ import { BsGithub } from "react-icons/bs";
 import { HiEye } from "react-icons/hi";
 import { AiOutlinePlayCircle } from "react-icons/ai";
 // import { useState } from "react";
-import myntra from "../Project/myntra.png";
-import Sephora from "../Project/sephora.png";
+import Roomhero from "../Project/RoomHero.png";
+import monitair from "../Project/monitair.png";
 import clockify from "../Project/clockify.png";
 import portfolio from "../Project/Portfolio.png";
 import AOS from "aos";
@@ -37,12 +37,12 @@ const Projects = (props) => {
           <Image
             w={"100%"}
             borderRadius={10}
-            src={myntra}
-            alt="Myntra-com"
+            src={monitair}
+            alt="monitair-com"
             border="5px solid #A3E900"
           />
           <Heading mt={4} fontSize={"22px"}>
-            Myntra - Clone
+            MonitAir
           </Heading>
           <Text
             fontSize={["14px", "14px", "17px"]}
@@ -51,12 +51,16 @@ const Projects = (props) => {
             mt={2}
             textAlign={"left"}
           >
-            This website is a clone of "myntra.com". Myntra is a E-commerce
-            website, where you can buy buy products I have cloned it
-            individually
+            MonitAir® is an all-in-one, HIPAA-compliant platform that combines
+            remote patient monitoring (RPM) and telemedicine (TM) to help
+            physicians improve patient outcomes while increasing practice
+            revenues. It was designed by doctors for doctors who manage patients
+            on PAP/NIV for chronic sleep and respiratory conditions,
+            predominantly obstructive sleep apnea (OSA) and chronic obstructive
+            pulmonary disease (COPD).
           </Text>
           <Text mt={2} textAlign={"left"} fontSize={["14px", "14px", "17px"]}>
-            <b> Individual Project </b>| <b>Duration: </b> 04 Days
+            <b> Team Project </b>| <b>Duration: </b> 1 year
           </Text>
           <Text mt={2} textAlign={"left"} fontSize={["13px", "13px", "15px"]}>
             <span style={{ color: "#A3E900", fontSize: "16px" }}>
@@ -64,7 +68,8 @@ const Projects = (props) => {
             </span>
             <span style={{ fontSize: "16px" }} ml="30px">
               {" "}
-              REACT | CSS | JAVASCRIPT | JSON SERVER | CHAKRA UI
+              JAVASCRIPT | CSS | ReactJS | TypeScript | Redux | NestJS | JSON
+              SERVER | NodeJs | GraphQL | AWS | Microservices | Docker
             </span>
           </Text>
           <Box
@@ -77,32 +82,33 @@ const Projects = (props) => {
             fontSize={["30px", "30px", "40px"]}
             className="ProjectIcon"
           >
-            <a href="https://github.com/Faizankhan99/used-lace-1162">
+            <a href="linkedin.com/company/monitairhealt">
               <BsGithub className="gitEye" style={{ marginTop: "3" }} />
             </a>
-            <a href="https://www.linkedin.com/posts/faizan7_myntra-project-react-activity-6970441473116782592-FTAe?utm_source=share&utm_medium=member_desktop">
+            <a href="https://www.monitairhealth.com/">
               <AiOutlinePlayCircle
                 className="gitEye"
                 style={{ marginTop: "3" }}
               />
             </a>
-            <a href="https://myntraaaa.netlify.app/">
+            <a href="https://www.monitairhealth.com/">
               <HiEye mt={-1.5} className="gitEye" />
             </a>
           </Box>
         </Box>
-        {/*Sephora................................................................................................... */}
+        {/*Roomhero................................................................................................... */}
 
         <Box data-aos="zoom-in" borderRadius={10} p={4} boxShadow="dark-lg">
           <Image
             w={"100%"}
+            //  h={"350px"}
             borderRadius={10}
-            src={Sephora}
-            alt="Myntra-com"
+            src={Roomhero}
+            alt="RoomHero-com"
             border="5px solid #A3E900"
           />
           <Heading mt={4} fontSize={"22px"}>
-            Sephora - Clone
+            RoomHero
           </Heading>
           <Text
             fontSize={["14px", "14px", "17px"]}
@@ -111,13 +117,13 @@ const Projects = (props) => {
             mt={2}
             textAlign={"left"}
           >
-            This website is a clone of "Sephora.com". Sephora is a Beauty
-            website, Buy cosmetics & beauty products online from Sephora, the
-            online shopping beauty store. Browse makeup,more from top beauty
-            brands
+            This website is a "RoomHero.com". ROOMHERO is online interior
+            designer for Residential real estate. As Europe's first digital,
+            fully integrated interior designer. I worked in a team of 20 members
+            to build this project. i worked frontend and bakend both.
           </Text>
           <Text mt={2} textAlign={"left"} fontSize={["14px", "14px", "17px"]}>
-            <b> Group Project: </b>| 5 Collaborators | <b>Duration: </b> 04 Days
+            <b> Group Project: </b>| 20 Collaborators | <b>Duration: </b> 1 year
           </Text>
           <Text mt={2} textAlign={"left"} fontSize={["13px", "13px", "15px"]}>
             <span style={{ color: "#A3E900", fontSize: "16px" }}>
@@ -125,7 +131,8 @@ const Projects = (props) => {
             </span>
             <span style={{ fontSize: "16px" }} ml="30px">
               {" "}
-              HTML | CSS | JAVASCRIPT | JSON SERVER
+              JAVASCRIPT | CSS | ReactJS | TypeScript | Redux | ExpressJS |JSON
+              SERVER NodeJs | MongoDB | AWS
             </span>
           </Text>
           <Box
@@ -138,16 +145,16 @@ const Projects = (props) => {
             fontSize={["30px", "30px", "40px"]}
             className="ProjectIcon"
           >
-            <a href="https://github.com/UrsTrulyAditya/Sephora-Clone">
+            <a href="#">
               <BsGithub className="gitEye" style={{ marginTop: "3" }} />
             </a>
-            <a href="https://www.linkedin.com/posts/faizan7_python-html-css-activity-6945353972337520640-nnFZ?utm_source=share&utm_medium=member_desktop">
+            <a href="https://www.roomhero.de/">
               <AiOutlinePlayCircle
                 className="gitEye"
                 style={{ marginTop: "3" }}
               />
             </a>
-            <a href="https://sphoraclone.netlify.app/homepage.html">
+            <a href="https://www.roomhero.de/">
               <HiEye mt={-1.5} className="gitEye" />
             </a>
           </Box>
@@ -172,7 +179,7 @@ const Projects = (props) => {
             mt={2}
             textAlign={"left"}
           >
-            This website is a clone of "Clockify". Clockify is a time tracker
+            This website is a of "Clockify". Clockify is a time tracker
             and timesheet app that lets you track work hours across projects.
             Unlimited users, free forever.
           </Text>

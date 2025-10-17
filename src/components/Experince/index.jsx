@@ -1,12 +1,18 @@
-import React, { useEffect } from 'react';
-import { Box, Flex, Heading, keyframes, Text, VStack } from '@chakra-ui/react';
+import React, { useEffect } from "react";
+import { Box, Flex, Heading, keyframes, Text, VStack } from "@chakra-ui/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const experiences = [
   {
+    company: "DevBay Technolab",
+    position: "Sr. Full Stack Developer",
+    duration: "April 2025 - Present",
+    logo: "/DevBay.png",
+  },
+  {
     company: "SynRam Technolab",
     position: "MERN Developer",
-    duration: "March 2024 - Present",
+    duration: "March 2024 - April 2025",
     logo: "/synram.jpg",
   },
   {
@@ -29,7 +35,6 @@ const experiences = [
   },
 ];
 
-
 const borderRotation = keyframes`
 0% {
   transform: rotate(0deg);
@@ -39,9 +44,7 @@ const borderRotation = keyframes`
 }
 `;
 
-
 const Timeline = (props) => {
-
   const { experince } = props;
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -86,8 +89,8 @@ const Timeline = (props) => {
               textAlign={{ base: "center", md: "left" }} // Center text on small screens
               w="100%"
               data-aos="fade-down"
-                data-aos-easing="linear"
-      data-aos-duration="1000"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
             >
               {/* Diamond-shaped logo */}
               <Box
@@ -127,7 +130,6 @@ const Timeline = (props) => {
                   borderRadius: "10%", // Add border-radius if needed
                   zIndex: "-1",
                 }}
-                
               >
                 <Box transform="rotate(-46deg)">
                   <img
@@ -140,17 +142,31 @@ const Timeline = (props) => {
               </Box>
 
               {/* Job details */}
-              <Box ml={{ base: 0, md: 8 }} mt={{ base: 10, md: 0 }} zIndex="2" data-aos="fade-left">
+              <Box
+                ml={{ base: 0, md: 8 }}
+                mt={{ base: 10, md: 0 }}
+                zIndex="2"
+                data-aos="fade-left"
+              >
                 {" "}
                 {/* Increased left margin for larger screens */}
-                <Text fontSize={{ base: "lg", md: "xl" }} fontWeight="bold" >
+                <Text fontSize={{ base: "lg", md: "xl" }} fontWeight="bold">
                   {" "}
                   {/* Increased font size */}
                   {exp.position}
                 </Text>
-                <Text fontSize={{ base: "md", md: "lg" }} data-aos="fade-up-right">{exp.company}</Text>{" "}
+                <Text
+                  fontSize={{ base: "md", md: "lg" }}
+                  data-aos="fade-up-right"
+                >
+                  {exp.company}
+                </Text>{" "}
                 {/* Increased font size */}
-                <Text fontSize={{ base: "sm", md: "md" }} color="gray.500" data-aos="fade-up-left">
+                <Text
+                  fontSize={{ base: "sm", md: "md" }}
+                  color="gray.500"
+                  data-aos="fade-up-left"
+                >
                   {exp.duration}
                 </Text>
               </Box>

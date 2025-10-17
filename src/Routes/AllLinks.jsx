@@ -42,11 +42,10 @@ export default function AllLinks() {
     contact.current.scrollIntoView({ behavior: "smooth" });
   }
 
-const experince = useRef();
-function handleExperinceClick() {
-  experince.current.scrollIntoView({ behavior: "smooth" });
-}
-
+  const experince = useRef();
+  function handleExperinceClick() {
+    experince.current.scrollIntoView({ behavior: "smooth" });
+  }
 
   const [bg, setBg] = useState();
 
@@ -123,7 +122,6 @@ function handleExperinceClick() {
               CONTACT
             </Text>
 
-
             <Text
               fontSize="xl"
               className={Styles.nav}
@@ -133,7 +131,7 @@ function handleExperinceClick() {
               EXEPERINCE
             </Text>
 
-            <a href="https://drive.google.com/file/d/12Gd7HGtrqxOvIYEdPkASSUA4ZEc38R8Q/view?usp=sharing">
+            <a href="https://docs.google.com/document/d/1FJYQp71RHY2O_wOU57qjfzfizeLjgjUQ/edit?usp=drive_link&ouid=115423260801085658981&rtpof=true&sd=true">
               <Text
                 fontSize="xl"
                 className={Styles.nav}
@@ -164,7 +162,7 @@ function handleExperinceClick() {
       <Profile home={home} />
       <About about={about} />
       <Skill Skills={Skills} />
-      <Timeline experince={experince}/>
+      <Timeline experince={experince} />
       <GitHub />
       <Projects project={project} />
       <Contact contact={contact} />
