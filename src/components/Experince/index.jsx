@@ -18,14 +18,8 @@ const experiences = [
   {
     company: "KnightFox infotech Pvt. Ltd.",
     position: "Software Developer",
-    duration: "Jan 20023 - March 2024",
+    duration: "Jan 2022 - March 2024",
     logo: "/knightfox.png",
-  },
-  {
-    company: "HexaDecimal Software Pvt Ltd",
-    position: "Software Developer",
-    duration: "Feb 2021 - Dec 2022",
-    logo: "/hexadecimal.jpg",
   },
   {
     company: "Freelancer",
@@ -85,8 +79,8 @@ const Timeline = (props) => {
               key={index}
               align="center"
               position="relative"
-              direction={{ base: "column", md: "row" }} // Stack items vertically on small screens
-              textAlign={{ base: "center", md: "left" }} // Center text on small screens
+              direction={{ base: "column", md: "row" }} 
+              textAlign={{ base: "center", md: "left" }} 
               w="100%"
               data-aos="fade-down"
               data-aos-easing="linear"
@@ -126,8 +120,8 @@ const Timeline = (props) => {
                   left: "3px",
                   right: "3px",
                   bottom: "3px",
-                  //backgroundColor: "#22232e", // Add background color
-                  borderRadius: "10%", // Add border-radius if needed
+                  //backgroundColor: "#22232e",
+                  borderRadius: "10%", 
                   zIndex: "-1",
                 }}
               >

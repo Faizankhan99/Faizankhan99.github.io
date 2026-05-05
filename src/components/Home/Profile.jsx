@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import image from "../Home/my.jpg";
 import hi from "../Home/Hi.gif";
-import resume from "../Home/Faizan_khan.docx";
+import resume from "../Home/Faizan.pdf";
 export default function Profile(props) {
   const { home } = props;
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function Profile(props) {
               h="50px"
               display="flex"
             >
-              <a href={resume} download="Faizan_khan_Resume.docx">
+              <a href={resume} download="Faizan_khan_Resume.pdf">
                 Resume
               </a>
               <AiOutlineArrowDown />
